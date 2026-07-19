@@ -38,11 +38,9 @@
   "editor.inlineSuggest.enabled": true,
   "editor.linkedEditing": true,
   "editor.bracketPairColorization.enabled": true,
-  "terminal.integrated.inheritEnv": true,
-  "terminal.integrated.enablePersistentSessions": true,
   "terminal.integrated.defaultProfile.linux": "bash",
   "terminal.integrated.fontFamily": "JetBrainsMono Nerd Font",
-  "terminal.integrated.fontSize": 16,
+  "terminal.integrated.fontSize": 14,
   "terminal.integrated.fontLigatures.enabled": true,
   "terminal.integrated.lineHeight": 1.2,
   "terminal.integrated.cursorStyle": "line",
@@ -73,5 +71,7 @@
   "workbench.iconTheme": "material-icon-theme",
   "workbench.browser.showInTitleBar": false,
   "workbench.layoutControl.enabled": false,
-  "workbench.navigationControl.enabled": false
+  "workbench.navigationControl.enabled": false,
+  "gitlens.ai.model": "vscode",
+  "gitlens.ai.vscode.model": "copilotcli:"
 }
