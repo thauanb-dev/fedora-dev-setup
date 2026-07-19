@@ -1,7 +1,7 @@
-alias ls="eza --icons"
-alias ll="eza -lah --icons"
+alias ls='eza --group-directories-first'
+alias ll='eza -lah --group-directories-first'
+alias lt='eza --tree --group-directories-first'
 alias la="eza -la --icons"
-alias lt="eza --tree --level=2 --icons"
 alias cat="bat"
 alias cls="clear"
 alias update="sudo dnf upgrade -y"

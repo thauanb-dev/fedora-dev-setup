@@ -141,6 +141,10 @@ echo "  ✓ Fastfetch"
 
 install -m 644 "$SCRIPT_DIR/HackerDEV.profile" \
     "$HOME/.local/share/konsole/HackerDEV.profile"
+# Garante o uso da Nerd Font
+sed -i \
+'s|^Font=.*|Font=JetBrainsMono Nerd Font,14,-1,5,400,0,0,0,0,0,0,0,0,0,0,1,,0,0|' \
+"$HOME/.local/share/konsole/HackerDEV.profile"
 echo "  ✓ HackerDEV.profile"
 
 if command -v kwriteconfig6 >/dev/null 2>&1; then
