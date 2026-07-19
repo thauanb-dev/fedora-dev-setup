@@ -1,0 +1,110 @@
+# ==========================
+# Geral
+# ==========================
+
+add_newline = true
+
+format = """
+$directory\
+$git_branch\
+$git_status\
+$python\
+$nodejs\
+$docker_context\
+$cmd_duration
+$character
+"""
+
+# ==========================
+# Prompt
+# ==========================
+
+[character]
+success_symbol = "[❯](bold green)"
+error_symbol = "[❯](bold red)"
+vimcmd_symbol = "[❮](bold yellow)"
+
+# ==========================
+# Diretório
+# ==========================
+
+[directory]
+style = "bold cyan"
+truncate_to_repo = true
+truncation_length = 3
+read_only = " "
+
+# ==========================
+# Git
+# ==========================
+
+[git_branch]
+symbol = " "
+style = "bold purple"
+
+[git_status]
+style = "bold red"
+
+# ==========================
+# Linguagens
+# ==========================
+
+[nodejs]
+symbol = "󰎙 "
+style = "bold green"
+
+[python]
+symbol = " "
+style = "bold yellow"
+
+[docker_context]
+symbol = "🐳 "
+style = "bold blue"
+
+# ==========================
+# Tempo de execução
+# ==========================
+
+[cmd_duration]
+min_time = 1000
+format = "[$duration](dimmed white)"
+
+# ==========================
+# Desabilitados
+# ==========================
+
+[username]
+disabled = true
+
+[hostname]
+disabled = true
+
+[package]
+disabled = true
+
+[rust]
+disabled = true
+
+[golang]
+disabled = true
+
+[java]
+disabled = true
+
+[c]
+disabled = true
+
+[aws]
+disabled = true
+
+[gcloud]
+disabled = true
+
+[kubernetes]
+disabled = true
+
+[terraform]
+disabled = true
+
+[time]
+disabled = true

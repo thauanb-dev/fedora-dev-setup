@@ -1,0 +1,28 @@
+# ~/.bashrc
+
+# Carrega aliases
+if [ -f ~/.aliases ]; then
+    source ~/.aliases
+fi
+
+# Starship
+eval "$(starship init bash)"
+
+# Zoxide
+if command -v zoxide >/dev/null 2>&1; then
+    eval "$(zoxide init bash)"
+fi
+
+# Histórico
+HISTSIZE=5000
+HISTFILESIZE=10000
+HISTCONTROL=ignoreboth
+
+# Melhor experiência
+shopt -s checkwinsize
+shopt -s histappend
+
+# Fastfetch apenas em terminais interativos
+if command -v fastfetch >/dev/null && [[ $- == *i* ]]; then
+    fastfetch
+fi
